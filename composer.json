@@ -1,0 +1,34 @@
+{
+    "name": "doubleoh13/laravel-rocketshipit",
+    "description": "A package to easily use RocketShipIt with Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jake Richhart",
+            "email": "jake@jakerichhart.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "DoubleOh13\\RocketShipIt\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.5",
+        "guzzlehttp/guzzle": "^5.0|^6.0|^7.0",
+        "illuminate/support": "^5.0|^6.0|^7.0",
+        "ext-json": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DoubleOh13\\RocketShipIt\\RocketShipItServiceProvider"
+            ],
+            "aliases": {
+                "RocketShipIt": "DoubleOh13\\RocketShipIt\\RocketShipItFacade"
+            }
+        }
+    }
+}
